@@ -46,7 +46,7 @@ class Interface:
             print("Nenhum valor recebido da conexão")
 
     async def receber_dados_do_websocket(self):
-        esp32_ip = "192.168.1.105"
+        esp32_ip = "------ "
         port = 80
         url = f"ws://{esp32_ip}:{port}/ws"
         async with websockets.connect(url) as websocket:
